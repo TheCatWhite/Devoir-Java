@@ -77,5 +77,14 @@ public class Main {
         gestion.communes = new Vector<>();
         gestion.communes.add(commune1);
         
+
+        for (Candidat c : candidats) {
+            System.out.println("Total des votes pour le candidat numéro: " + c.numero + "->"
+                    + gestion.totalVotesCandidat(c.numero));
+        }
+        
+        System.out.println("Total des inscrits: " + gestion.totalInscrits());
+        System.out.println("Total des votes blancs: " + gestion.totalBlancs());
+  
     }
 }
