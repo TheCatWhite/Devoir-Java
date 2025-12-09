@@ -85,6 +85,7 @@ public class Main {
         
         System.out.println("Total des inscrits: " + gestion.totalInscrits());
         System.out.println("Total des votes blancs: " + gestion.totalBlancs());
-  
+        Candidat gagnant = gestion.gagnantNational();
+        System.out.println("le gagnant national est le candidat: \nnuméro: "+gagnant.numero+"\nnom: "+gagnant.nom);
     }
 }
